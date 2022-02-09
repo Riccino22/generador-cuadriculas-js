@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>GENERATOR JS</title>
+</head>
+<body>
+    <div id="cubierta"></div>
+    <div id="container">
+        <canvas id="canvas"></canvas><br><br>
+        <button id="closeBtn">X</button>
+    </div>
+    <h1>GENERADOR DE CUADRICULAS</h1>
+    <h3>Espacio entre cuadriculas verticales</h3>
+    <input id="space-sqr-height" class="params" type="number" min="0" autofocus value="20">
+    <h3>Color de cuadriculas verticales</h3>
+    <input id="colorAltC" type="color" class="select-color">
+    <h3>Espacio entre cuadriculas horizontales</h3>
+    <input id="space-sqr-width" class="params" type="number" min="0" value="20">
+    <h3>Color de cuadriculas horizontales</h3>
+    <input id="colorHorC" type="color" class="select-color">
+    <h3>Alto del canvas</h3>
+    <input id="cH" class="params" type="number" min="0" value="100">
+    <h3>Ancho del canvas</h3>
+    <input id="cW" class="params" type="number" min="0" value="100"><br><br>
+    <button onclick="crearCuadricula()">CREAR CUADRICULA</button><br>
+    <script src="JS/app.js"></script>
+</body>
+</html>
